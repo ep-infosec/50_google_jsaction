@@ -1,0 +1,175 @@
+<div id="container">
+  <div id="innercontainer">
+    <span id="host">
+      <span id="target"></span>
+    </span>
+  </div>
+</div>
+
+<div id="container2">
+  <div>
+    <span id="host2" jsaction="clickaction">
+      <span id="target2"></span>
+    </span>
+  </div>
+</div>
+
+<div id="container4">
+  <div>
+    <span id="host41" jsaction="clickaction_parent">
+      <span id="host42" jsaction="clickaction_child">
+        <span id="target4"></span>
+      </span>
+    </span>
+  </div>
+</div>
+
+<div id="outercontainer5">
+  <div id="container5" jsnamespace="namespace5">
+    <div id="innercontainer5">
+      <span id="host5" jsaction="clickaction"></span>
+    </div>
+  </div>
+</div>
+
+<div id="container6">
+  <a href="javascript:void(0);" jsaction="myaction;clickmod: myclickmodaction">
+    <span id="inside_anchor6"></span>
+  </a>
+</div>
+
+<!-- Only access when HTML attributes are not cached. -->
+<div id="container7">
+  <div id="namespace7" jsnamespace="namespace7">
+    <div id="action7inner" jsaction="namespace7inner.qualifiedaction7">
+      <span id="action7" jsaction="action7"></span>
+    </div>
+  </div>
+</div>
+
+<div id="container8">
+  <div jsaction="action8">
+    <span id="action8-1"></span>
+  </div>
+  <div jsaction="clickmod:action8">
+    <span id="action8-2"></span>
+  </div>
+  <div jsaction="keypress:action8;keydown:action8">
+    <span id="action8-3"></span>
+  </div>
+  <div jsaction="action8;clickonly:action9">
+    <span id="action8-4"></span>
+  </div>
+</div>
+
+<div id="container9">
+  <div jsaction="mouseenter:action9">
+    <span id="action9-1"></span>
+  </div>
+  <div jsaction="mouseleave:action9">
+    <span id="action9-2"></span>
+  </div>
+</div>
+
+<div id="container10">
+  <div jsaction="action10">
+    <span id="action10-1"></span>
+  </div>
+</div>
+
+<div id="owned">
+</div>
+
+<div id="outercontainer11">
+  <div id="outeraction11" jsaction="outer">
+    <div id="innercontainer11">
+      <span id="inneraction11" jsaction="inner"></span>
+    </div>
+  </div>
+</div>
+
+<div id="container12">
+  <div jsaction="click:shouldNeverMatch">
+    <div jsaction="click:action12">
+      <span id="action12-1"></span>
+    </div>
+  </div>
+  <div jsaction="click:action12">
+    <span id="action12-2">
+      <input type="text" id="text12">
+      <input type="password" id="password12">
+      <input type="search" id="search12">
+      <textarea id="textarea12"></textarea>
+      <div id="contenteditable12" contenteditable="true"></div>
+    </span>
+  </div>
+  <div jsaction="click:action12;touchstart:action12">
+    <span id="action12-3"></span>
+  </div>
+  <div jsaction="clickonly:action12">
+    <span id="action12-4"></span>
+  </div>
+</div>
+
+<div id="container13">
+  <div id="host13" jsaction="foo:fooaction;bar:baraction">
+    <span id="target13"></span>
+  </div>
+</div>
+
+<div id="container14">
+  <div id="pathitem14" jsaction="click:action14">
+    <div id="target14">
+    </div>
+  </div>
+</div>
+
+<div id="container15">
+  <div id="pathitem15">
+    <div id="target15" jsaction="click:action15">
+    </div>
+  </div>
+</div>
+
+<div id="container16">
+  <div id="target16" jsaction="event-16:action16">
+  </div>
+</div>
+
+<div id="container17">
+  <div id="target17" jsaction="clickAlias:clicked">
+  </div>
+</div>
+
+<div id="container18">
+  <a href="javascript:void(0);" jsaction="myaction;clickmod: myclickmodaction">
+    <span id="inside_anchor18"></span>
+  </a>
+</div>
+
+<div id="container19" jsaction="click:action19" tabindex="0">
+  <span id="inside_span19"></span>
+</div>
+
+<div id="container20" jsaction="click:action20" tabindex="0">
+  <button id="button20">
+    <span id="inside_span20"></span>
+  </button>
+</div>
+
+<div id="container21" jsaction="click:action21"  tabindex="0">
+  <button id="anchor21" disabled>
+    <span id="inside_span21"></span>
+  </button>
+</div>
+
+<div id="container22" jsaction="click:action22"  tabindex="0">
+  <button id="anchor22">
+    <span id="inside_span22" tabindex="0"></span>
+  </button>
+</div>
+
+<div id="container23" jsaction="click:action23">
+  <button id="initiallyfocused_button23"></button>
+  <span id="unfocusable_span23"></span>
+</div>
